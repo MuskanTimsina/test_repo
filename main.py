@@ -18,7 +18,7 @@ class student_patch(BaseModel):
 
 students=[]
 
-# HTTP get request with the ID valdation
+# HTTP get request with the ID validation
 @app.get("/students/{student_id}")
 def get_student(student_id:int):
     for s in students:
